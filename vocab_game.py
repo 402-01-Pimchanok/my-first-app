@@ -73,7 +73,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4):
 st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
 
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    time_left = int(30 - (time.time() - st.session_state.start))
+    time_left = int(60 - (time.time() - st.session_state.start))
 
     if time_left > 0:
         st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
@@ -115,7 +115,7 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
     st.rerun()
 
 if st.session_state.get("is_ended", False):
-    show_result_dialog(ans1, ans2)
+    show_result_dialog(ans1, ans2, ans3, ans4)
 
 st.divider()
 st.write("นางสาวพิมพ์ชนก ซัง เลขที่ 1 ม.4/2")
