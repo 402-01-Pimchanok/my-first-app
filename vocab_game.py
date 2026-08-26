@@ -92,11 +92,11 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3: An `a _ o _ a d _` a day keeps the doctor away. 🥑",
+    "ข้อ 3: An `a _ o _ a d _` There is a large seed in the center. 🥑",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: Cats love to eat `p e _ _ h`. 🍑",
+    "ข้อ 4: Sweet, with a light pink peel. `p e _ _ h`. 🍑",
     value=st.session_state.ans4_val,
 )
 
